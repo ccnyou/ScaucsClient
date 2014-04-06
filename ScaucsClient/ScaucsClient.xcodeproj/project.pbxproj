@@ -38,9 +38,15 @@
 		B2AAE4C718F1E3740000EAE0 /* ScaucsSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AAE4C618F1E3740000EAE0 /* ScaucsSession.m */; };
 		B2AAE4CA18F1E8C70000EAE0 /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AAE4C918F1E8C70000EAE0 /* ServiceClient.m */; };
 		B2AAE4CE18F1E9820000EAE0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AAE4CD18F1E9820000EAE0 /* MBProgressHUD.m */; };
+		B2AD7FF518F2127900790DB1 /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AD7FF418F2127900790DB1 /* CourseDetailViewController.m */; };
 		B2F35D3E18F1F5340005F2A7 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B2F35D3C18F1F5340005F2A7 /* 37x-Checkmark.png */; };
 		B2F35D3F18F1F5340005F2A7 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2F35D3D18F1F5340005F2A7 /* 37x-Checkmark@2x.png */; };
 		B2F35D4218F1F6E30005F2A7 /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F35D4118F1F6E30005F2A7 /* CourseViewController.m */; };
+		B2F35D4A18F200690005F2A7 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B2F35D4418F200680005F2A7 /* blueArrow.png */; };
+		B2F35D4B18F200690005F2A7 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2F35D4518F200680005F2A7 /* blueArrow@2x.png */; };
+		B2F35D4C18F200690005F2A7 /* blueArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = B2F35D4618F200680005F2A7 /* blueArrowDown.png */; };
+		B2F35D4D18F200690005F2A7 /* blueArrowDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2F35D4718F200680005F2A7 /* blueArrowDown@2x.png */; };
+		B2F35D4E18F200690005F2A7 /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F35D4918F200680005F2A7 /* PullingRefreshTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +71,8 @@
 		B2058B8418EB196800F0FD5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2058B8518EB196800F0FD5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B2058B8818EB196800F0FD5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B2058B8A18EB196800F0FD5D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		B2058B8B18EB196800F0FD5D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B2058B8A18EB196800F0FD5D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ScaucsClient/LoginViewController.h; sourceTree = "<group>"; };
+		B2058B8B18EB196800F0FD5D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ScaucsClient/LoginViewController.m; sourceTree = "<group>"; };
 		B2058B8D18EB196800F0FD5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2058B9318EB196800F0FD5D /* ScaucsClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScaucsClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2058B9418EB196800F0FD5D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -104,10 +110,18 @@
 		B2AAE4C918F1E8C70000EAE0 /* ServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceClient.m; path = ../../../SOAPDemo/SOAPDemo/Classes/ServiceClient.m; sourceTree = "<group>"; };
 		B2AAE4CC18F1E9820000EAE0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		B2AAE4CD18F1E9820000EAE0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B2AD7FF318F2127900790DB1 /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailViewController.h; sourceTree = "<group>"; };
+		B2AD7FF418F2127900790DB1 /* CourseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailViewController.m; sourceTree = "<group>"; };
 		B2F35D3C18F1F5340005F2A7 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		B2F35D3D18F1F5340005F2A7 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
-		B2F35D4018F1F6E30005F2A7 /* CourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseViewController.h; sourceTree = "<group>"; };
-		B2F35D4118F1F6E30005F2A7 /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewController.m; sourceTree = "<group>"; };
+		B2F35D4018F1F6E30005F2A7 /* CourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseViewController.h; path = ScaucsClient/CourseViewController.h; sourceTree = "<group>"; };
+		B2F35D4118F1F6E30005F2A7 /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseViewController.m; path = ScaucsClient/CourseViewController.m; sourceTree = "<group>"; };
+		B2F35D4418F200680005F2A7 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		B2F35D4518F200680005F2A7 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		B2F35D4618F200680005F2A7 /* blueArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrowDown.png; sourceTree = "<group>"; };
+		B2F35D4718F200680005F2A7 /* blueArrowDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrowDown@2x.png"; sourceTree = "<group>"; };
+		B2F35D4818F200680005F2A7 /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
+		B2F35D4918F200680005F2A7 /* PullingRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingRefreshTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +152,7 @@
 		B2058B6918EB196800F0FD5D = {
 			isa = PBXGroup;
 			children = (
+				B2AD7FF218F2119B00790DB1 /* ViewControllers */,
 				B2AAE4BB18F1DC2E0000EAE0 /* Images */,
 				B2058BAA18EB199000F0FD5D /* Third */,
 				B2058B7B18EB196800F0FD5D /* ScaucsClient */,
@@ -174,14 +189,10 @@
 				B2058B8418EB196800F0FD5D /* AppDelegate.h */,
 				B2058B8518EB196800F0FD5D /* AppDelegate.m */,
 				B2058B8718EB196800F0FD5D /* Main.storyboard */,
-				B2058B8A18EB196800F0FD5D /* LoginViewController.h */,
-				B2058B8B18EB196800F0FD5D /* LoginViewController.m */,
 				B2058B8D18EB196800F0FD5D /* Images.xcassets */,
 				B2058B7C18EB196800F0FD5D /* Supporting Files */,
 				B2AAE4C518F1E3740000EAE0 /* ScaucsSession.h */,
 				B2AAE4C618F1E3740000EAE0 /* ScaucsSession.m */,
-				B2F35D4018F1F6E30005F2A7 /* CourseViewController.h */,
-				B2F35D4118F1F6E30005F2A7 /* CourseViewController.m */,
 			);
 			path = ScaucsClient;
 			sourceTree = "<group>";
@@ -218,6 +229,7 @@
 		B2058BAA18EB199000F0FD5D /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				B2F35D4318F200680005F2A7 /* PullingRefresh */,
 				B2AAE4CB18F1E9820000EAE0 /* MBProgressHUD */,
 				B2058BAB18EB1ADC00F0FD5D /* AFNetworking */,
 				B2058BBF18EB1ADC00F0FD5D /* GDataXMLNode */,
@@ -289,6 +301,32 @@
 				B2AAE4CD18F1E9820000EAE0 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		B2AD7FF218F2119B00790DB1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2058B8A18EB196800F0FD5D /* LoginViewController.h */,
+				B2058B8B18EB196800F0FD5D /* LoginViewController.m */,
+				B2F35D4018F1F6E30005F2A7 /* CourseViewController.h */,
+				B2F35D4118F1F6E30005F2A7 /* CourseViewController.m */,
+				B2AD7FF318F2127900790DB1 /* CourseDetailViewController.h */,
+				B2AD7FF418F2127900790DB1 /* CourseDetailViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2F35D4318F200680005F2A7 /* PullingRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B2F35D4418F200680005F2A7 /* blueArrow.png */,
+				B2F35D4518F200680005F2A7 /* blueArrow@2x.png */,
+				B2F35D4618F200680005F2A7 /* blueArrowDown.png */,
+				B2F35D4718F200680005F2A7 /* blueArrowDown@2x.png */,
+				B2F35D4818F200680005F2A7 /* PullingRefreshTableView.h */,
+				B2F35D4918F200680005F2A7 /* PullingRefreshTableView.m */,
+			);
+			path = PullingRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,9 +407,13 @@
 			files = (
 				B2058B8E18EB196800F0FD5D /* Images.xcassets in Resources */,
 				B2F35D3F18F1F5340005F2A7 /* 37x-Checkmark@2x.png in Resources */,
+				B2F35D4B18F200690005F2A7 /* blueArrow@2x.png in Resources */,
 				B2AAE4BE18F1DC2E0000EAE0 /* 1.png in Resources */,
+				B2F35D4C18F200690005F2A7 /* blueArrowDown.png in Resources */,
+				B2F35D4A18F200690005F2A7 /* blueArrow.png in Resources */,
 				B2F35D3E18F1F5340005F2A7 /* 37x-Checkmark.png in Resources */,
 				B2AAE4BF18F1DC2E0000EAE0 /* 2.png in Resources */,
+				B2F35D4D18F200690005F2A7 /* blueArrowDown@2x.png in Resources */,
 				B2AAE4C118F1DD0D0000EAE0 /* 3.png in Resources */,
 				B2058B8018EB196800F0FD5D /* InfoPlist.strings in Resources */,
 				B2058B8918EB196800F0FD5D /* Main.storyboard in Resources */,
@@ -400,6 +442,7 @@
 				B2058BC818EB1ADC00F0FD5D /* AFNetworkReachabilityManager.m in Sources */,
 				B2F35D4218F1F6E30005F2A7 /* CourseViewController.m in Sources */,
 				B2058BCE18EB1ADC00F0FD5D /* GDataXMLNode.m in Sources */,
+				B2F35D4E18F200690005F2A7 /* PullingRefreshTableView.m in Sources */,
 				B2058BCC18EB1ADC00F0FD5D /* AFURLResponseSerialization.m in Sources */,
 				B2058BCA18EB1ADC00F0FD5D /* AFURLConnectionOperation.m in Sources */,
 				B2058BC918EB1ADC00F0FD5D /* AFSecurityPolicy.m in Sources */,
@@ -409,6 +452,7 @@
 				B2058B8618EB196800F0FD5D /* AppDelegate.m in Sources */,
 				B2AAE4CA18F1E8C70000EAE0 /* ServiceClient.m in Sources */,
 				B2058B8218EB196800F0FD5D /* main.m in Sources */,
+				B2AD7FF518F2127900790DB1 /* CourseDetailViewController.m in Sources */,
 				B2AAE4CE18F1E9820000EAE0 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

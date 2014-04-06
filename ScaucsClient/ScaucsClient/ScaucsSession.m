@@ -17,10 +17,10 @@
 
 + (id)allocWithZone:(struct _NSZone *)zone
 {
-    return [self sharedClient];
+    return [self sharedSession];
 }
 
-+ (ScaucsSession *)sharedClient
++ (ScaucsSession *)sharedSession
 {
     static ScaucsSession* sharedClientObject = nil;
     if (sharedClientObject == nil) {

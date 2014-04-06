@@ -140,8 +140,9 @@
 
 - (void)serviceClient:(ServiceClient *)client loginCompletedWithResult:(NSString *)result
 {
-    ScaucsSession* scaucsClient = [ScaucsSession sharedClient];
+    ScaucsSession* scaucsClient = [ScaucsSession sharedSession];
     scaucsClient.session = result;
+    scaucsClient.userName = _userNameTextField.text;
     
 	UIImageView *imageView;
     UIImage *image = [UIImage imageNamed:@"37x-Checkmark.png"];

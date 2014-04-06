@@ -13,8 +13,9 @@
 
 @interface ScaucsSession : NSObject
 
+@property (nonatomic, strong) NSString* userName;
 @property (nonatomic, strong) NSString* session;
 
-+ (ScaucsSession *)sharedClient;
++ (ScaucsSession *)sharedSession;
 
 @end
