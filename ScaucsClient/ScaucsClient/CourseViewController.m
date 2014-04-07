@@ -24,6 +24,7 @@ PullingRefreshTableViewDelegate, ServiceClientDelegate>
 
 @implementation CourseViewController
 
+
 - (void)awakeFromNib
 {
     _client = [[ServiceClient alloc] init];
@@ -69,7 +70,7 @@ PullingRefreshTableViewDelegate, ServiceClientDelegate>
     dest.htmlString = arr[3];
 }
 
-- (void) loadData
+- (void)loadData
 {
     ScaucsSession* session = [ScaucsSession sharedSession];
     [_client getMyCourseDetailAsync:session.userName andSession:session.session];
