@@ -133,7 +133,20 @@ PullingRefreshTableViewDelegate, ServiceClientDelegate>
     }
     
     int row = indexPath.row;
+    if (row > _courses.count) {
+        cell.textLabel.text = @"出错了";
+        return cell;
+    }
+    
     NSArray* arr = [_courses objectAtIndex:row];
+    if (arr.count == 1) {
+
+        UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"出错了" message:arr[0] delegate:nil cancelButtonTitle:@"我错了- -" otherButtonTitles:nil];
+        [alertView show];
+        
+        return cell;
+    }
+    
     NSArray* stuff = @[arr[0], arr[1], arr[2]];
     NSString* text = [stuff componentsJoinedByString:@" - "];
 

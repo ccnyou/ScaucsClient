@@ -140,17 +140,24 @@
 
 - (void)serviceClient:(ServiceClient *)client loginCompletedWithResult:(NSString *)result
 {
-    ScaucsSession* scaucsClient = [ScaucsSession sharedSession];
-    scaucsClient.session = result;
-    scaucsClient.userName = _userNameTextField.text;
-    
-	UIImageView *imageView;
-    UIImage *image = [UIImage imageNamed:@"37x-Checkmark.png"];
-    imageView = [[UIImageView alloc] initWithImage:image];
-    
-	_hud.customView = imageView;
-	_hud.mode = MBProgressHUDModeCustomView;
-	_hud.labelText = @"登陆成功";
+    if (result.length == 3) {
+        NSString* msg = [NSString stringWithFormat:@"错误代码: %@", result];
+        UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"出错了" message:msg delegate:nil cancelButtonTitle:@"我错了- -" otherButtonTitles:nil];
+        [alertView show];
+        
+    } else {
+        ScaucsSession* scaucsClient = [ScaucsSession sharedSession];
+        scaucsClient.session = result;
+        scaucsClient.userName = _userNameTextField.text;
+        
+        UIImageView *imageView;
+        UIImage *image = [UIImage imageNamed:@"37x-Checkmark.png"];
+        imageView = [[UIImageView alloc] initWithImage:image];
+        
+        _hud.customView = imageView;
+        _hud.mode = MBProgressHUDModeCustomView;
+        _hud.labelText = @"登陆成功";
+    }
     
     [_hud hide:YES afterDelay:1];
     [self performSelector:@selector(loginSuccess) withObject:nil afterDelay:1.5f];
