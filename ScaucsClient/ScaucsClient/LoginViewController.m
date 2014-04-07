@@ -50,9 +50,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-
-    
+   
     UITextField* userNameTextField = _userNameTextField;
     userNameTextField.borderStyle = UITextBorderStyleRoundedRect;
     userNameTextField.placeholder = @"用户名";

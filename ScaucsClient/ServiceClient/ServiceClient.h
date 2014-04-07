@@ -35,7 +35,6 @@
 //通用同步方法调用
 + (NSData *)commonCall:(NSString *)methodName andParams:(NSDictionary *)params;
 
-
 //异步登陆接口
 - (void)userLoginAsync:(NSString *)userName andPswMD5:(NSString *)pswMD5;
 
