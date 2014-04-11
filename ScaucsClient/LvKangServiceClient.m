@@ -72,7 +72,7 @@
     //构造请求
     NSDictionary* params = @{
                              @"strStudentNumber" : userName,
-                             @"strPassWordMd5" : pswMD5
+                             @"strPassWordMD5" : pswMD5
                              };
     NSURLRequest* request = [self requestWithMethodName:@"GetMyPassword" andParams:params];
     
@@ -115,7 +115,7 @@
     //构造请求
     NSDictionary* params = @{
                              @"strStudentNumber" : userName,
-                             @"strPassWordMd5" : pswMD5
+                             @"strPassWordMD5" : pswMD5
                              };
     NSURLRequest* request = [self requestWithMethodName:@"GetUPCA" andParams:params];
     
@@ -139,7 +139,6 @@
                 NSAssert([[node name] isEqualToString:@"GetUPCAResult"], @"貌似出错了，返回数据不是 UserLoginResult");
                 
                 resultString = [node stringValue];
-                NSLog(@"%s %d %@", __FUNCTION__, __LINE__, resultString);
                 
                 resultData = [GTMBase64 decodeString:resultString];
             }

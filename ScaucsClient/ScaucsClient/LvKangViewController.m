@@ -7,11 +7,16 @@
 //
 
 #import "LvKangViewController.h"
+#import "LvKangServiceClient.h"
 
-@interface LvKangViewController ()
+@interface LvKangViewController () <LvKangServiceClientDelegate>
 
 @property (nonatomic, strong) IBOutlet UITextField* userNameTextField;
 @property (nonatomic, strong) IBOutlet UITextField* passwordTextField;
+@property (nonatomic, strong) IBOutlet UILabel* label;
+@property (nonatomic, strong) IBOutlet UIImageView* imageView;
+
+@property (nonatomic, strong) LvKangServiceClient* client;
 
 @end
 
@@ -73,9 +78,40 @@
 
 - (IBAction)gameClicked:(id)sender
 {
+    NSString* userName = _userNameTextField.text;
+    NSString* psw = _passwordTextField.text;
     
+    _client = [[LvKangServiceClient alloc] init];
+    _client.delegate = self;
     
-    
+    [_client getMyPassword:userName andPsw:psw];
+    [_client getUPCA:userName andPsw:psw];
 }
+
+
+
+#pragma mark - 绿康
+
+- (void)lkServiceClient:(LvKangServiceClient *)client getPswCompletedWithResult:(NSString *)result
+{
+    _label.text = result;
+}
+
+- (void)lkServiceClient:(LvKangServiceClient *)client getPswFailedWithError:(NSError *)error
+{
+    NSLog(@"%s %d", __FUNCTION__, __LINE__);
+}
+
+- (void)lkServiceClient:(LvKangServiceClient *)client getUpcaCompletedWithResult:(NSData *)result
+{
+    UIImage* image = [UIImage imageWithData:result];
+    _imageView.image = image;
+}
+
+- (void)lkServiceClient:(LvKangServiceClient *)client getUpcaFailedWithError:(NSError *)error
+{
+    NSLog(@"%s %d", __FUNCTION__, __LINE__);
+}
+
 
 @end

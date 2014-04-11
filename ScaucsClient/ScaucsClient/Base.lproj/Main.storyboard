@@ -90,10 +90,24 @@
                                     <action selector="loginClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7ny-M8-jYg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSq-6I-878">
+                                <rect key="frame" x="80" y="139" width="160" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0W-Fr-5kv">
+                                <rect key="frame" x="40" y="210" width="240" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="W0W-Fr-5kv" id="xNz-GF-ENm"/>
+                        <outlet property="label" destination="iSq-6I-878" id="iSN-yO-XU9"/>
                         <outlet property="passwordTextField" destination="W93-Jp-VQY" id="5rf-bO-dsc"/>
                         <outlet property="userNameTextField" destination="zg7-VN-Whn" id="VRy-Bp-B7T"/>
                     </connections>
