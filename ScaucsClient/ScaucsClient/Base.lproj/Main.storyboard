@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="qSq-sE-rYU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="0Qv-uY-owS">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -40,6 +40,17 @@
                                     <action selector="loginClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZSd-PR-XsW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5J-5A-gB6">
+                                <rect key="frame" x="80" y="284" width="160" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="喝奶" backgroundImage="3.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lvkang:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UZO-5S-ra6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -48,6 +59,7 @@
                         <outlet property="passwordTextField" destination="w8q-6H-zpf" id="2Gc-Am-nuO"/>
                         <outlet property="userNameTextField" destination="c69-L6-GmG" id="HEM-nH-ELR"/>
                         <segue destination="Sof-aD-Jpw" kind="push" identifier="login" id="yop-Za-5n2"/>
+                        <segue destination="qSq-sE-rYU" kind="push" identifier="model" id="Hpa-Vv-3mP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -63,7 +75,7 @@
                         <viewControllerLayoutGuide type="bottom" id="rux-52-3RO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f2z-Es-ikj">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zg7-VN-Whn">
@@ -79,7 +91,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNa-UQ-4k9">
-                                <rect key="frame" x="80" y="96" width="160" height="30"/>
+                                <rect key="frame" x="80" y="119" width="160" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="一起疯狂吧" backgroundImage="3.png">
@@ -91,15 +103,15 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSq-6I-878">
-                                <rect key="frame" x="80" y="139" width="160" height="21"/>
+                                <rect key="frame" x="80" y="162" width="160" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0W-Fr-5kv">
-                                <rect key="frame" x="40" y="210" width="240" height="318"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0W-Fr-5kv">
+                                <rect key="frame" x="40" y="210" width="240" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -114,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VzA-5r-Klx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-211" y="816"/>
+            <point key="canvasLocation" x="720" y="817"/>
         </scene>
         <!--Course View Controller - 课程通知-->
         <scene sceneID="ALR-D1-01M">
@@ -136,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyU-E3-CwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="122"/>
+            <point key="canvasLocation" x="720" y="122"/>
         </scene>
         <!--Course Detail View Controller - 通知详情-->
         <scene sceneID="dgc-eh-uzi">
@@ -165,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exV-mk-kzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021" y="122"/>
+            <point key="canvasLocation" x="1213" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SmC-OW-Yp0">
@@ -184,6 +196,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="3.png" width="160" height="30"/>
+        <image name="3.png" width="160" height="30"/>
         <image name="3.png" width="160" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

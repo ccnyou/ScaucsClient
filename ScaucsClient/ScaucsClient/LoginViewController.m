@@ -105,6 +105,9 @@
 
 #pragma mark - Action
 
+- (IBAction)lvkang:(id)sender {
+    [self performSegueWithIdentifier:@"model" sender:self];
+}
 
 - (IBAction)loginClicked:(id)sender
 {

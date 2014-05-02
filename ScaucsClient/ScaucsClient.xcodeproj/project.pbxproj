@@ -35,8 +35,8 @@
 		B2126BD218F25A66009F0E68 /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2126BCF18F25A66009F0E68 /* CourseDetailViewController.m */; };
 		B2126BD318F25A66009F0E68 /* LvKangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2126BD118F25A66009F0E68 /* LvKangViewController.m */; };
 		B2126BD618F25A81009F0E68 /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B2126BD518F25A81009F0E68 /* ServiceClient.m */; };
-		B2126BD918F25AA9009F0E68 /* LvKangServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B2126BD818F25AA9009F0E68 /* LvKangServiceClient.m */; };
 		B2126BDE18F262B7009F0E68 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = B2126BDC18F262B7009F0E68 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B29AC7261913781F00F07D5A /* LvKangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29AC7251913781F00F07D5A /* LvKangViewController.m */; };
 		B2AAE4BE18F1DC2E0000EAE0 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AAE4BC18F1DC2E0000EAE0 /* 1.png */; };
 		B2AAE4BF18F1DC2E0000EAE0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AAE4BD18F1DC2E0000EAE0 /* 2.png */; };
 		B2AAE4C118F1DD0D0000EAE0 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AAE4C018F1DD0D0000EAE0 /* 3.png */; };
@@ -110,11 +110,11 @@
 		B2126BD118F25A66009F0E68 /* LvKangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LvKangViewController.m; path = ScaucsClient/LvKangViewController.m; sourceTree = "<group>"; };
 		B2126BD418F25A81009F0E68 /* ServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceClient.h; path = ServiceClient/ServiceClient.h; sourceTree = "<group>"; };
 		B2126BD518F25A81009F0E68 /* ServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceClient.m; path = ServiceClient/ServiceClient.m; sourceTree = "<group>"; };
-		B2126BD718F25AA9009F0E68 /* LvKangServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvKangServiceClient.h; sourceTree = "<group>"; };
-		B2126BD818F25AA9009F0E68 /* LvKangServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvKangServiceClient.m; sourceTree = "<group>"; };
 		B2126BDB18F262B7009F0E68 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		B2126BDC18F262B7009F0E68 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		B2126BDD18F262B7009F0E68 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		B29AC7241913781F00F07D5A /* LvKangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvKangViewController.h; sourceTree = "<group>"; };
+		B29AC7251913781F00F07D5A /* LvKangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvKangViewController.m; sourceTree = "<group>"; };
 		B2AAE4BC18F1DC2E0000EAE0 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		B2AAE4BD18F1DC2E0000EAE0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		B2AAE4C018F1DD0D0000EAE0 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -198,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				B2058B8418EB196800F0FD5D /* AppDelegate.h */,
+				B29AC7241913781F00F07D5A /* LvKangViewController.h */,
+				B29AC7251913781F00F07D5A /* LvKangViewController.m */,
 				B2058B8518EB196800F0FD5D /* AppDelegate.m */,
 				B2058B8718EB196800F0FD5D /* Main.storyboard */,
 				B2058B8D18EB196800F0FD5D /* Images.xcassets */,
@@ -289,8 +291,6 @@
 			children = (
 				B2126BD418F25A81009F0E68 /* ServiceClient.h */,
 				B2126BD518F25A81009F0E68 /* ServiceClient.m */,
-				B2126BD718F25AA9009F0E68 /* LvKangServiceClient.h */,
-				B2126BD818F25AA9009F0E68 /* LvKangServiceClient.m */,
 			);
 			name = ServiceClient;
 			sourceTree = "<group>";
@@ -463,9 +463,9 @@
 				B2058BC518EB1ADC00F0FD5D /* AFHTTPRequestOperation.m in Sources */,
 				B2058B8C18EB196800F0FD5D /* LoginViewController.m in Sources */,
 				B2AAE4C718F1E3740000EAE0 /* ScaucsSession.m in Sources */,
+				B29AC7261913781F00F07D5A /* LvKangViewController.m in Sources */,
 				B2058BC618EB1ADC00F0FD5D /* AFHTTPRequestOperationManager.m in Sources */,
 				B2058BC818EB1ADC00F0FD5D /* AFNetworkReachabilityManager.m in Sources */,
-				B2126BD918F25AA9009F0E68 /* LvKangServiceClient.m in Sources */,
 				B2F35D4218F1F6E30005F2A7 /* CourseViewController.m in Sources */,
 				B2058BCE18EB1ADC00F0FD5D /* GDataXMLNode.m in Sources */,
 				B2F35D4E18F200690005F2A7 /* PullingRefreshTableView.m in Sources */,
